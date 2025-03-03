@@ -16,6 +16,7 @@ Setelah menyelesaikan tutorial ini, mahasiswa diharapkan untuk dapat:
 
 - Mengetahui cara instalasi IDE dan extension untuk keperluan praktikum
 - Mengetahui materi apa saja yang akan dipelajari selama praktikum pemweb
+- Mengetahui aplikasi buat dapat akses web server
 
 ## Tutorial: Instalasi IDE
 
