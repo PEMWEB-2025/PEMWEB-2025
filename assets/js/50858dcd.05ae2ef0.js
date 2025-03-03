@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpemweb_2025=self.webpackChunkpemweb_2025||[]).push([[6092],{742:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/PEMWEB-2025/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
