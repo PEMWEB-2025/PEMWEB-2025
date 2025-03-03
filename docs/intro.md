@@ -8,7 +8,7 @@ Path: docs/index
 
 1. Tutorial rilis setiap minggu pada hari Rabu.
 
-2. Tenggat waktu pengerjaan sesuai dengan kesepakatan bersama dikelas.
+2. Tenggat waktu pengerjaan tugas dan konsekuensi apabila terlambat mengumpulkan sesuai dengan kesepakatan bersama dikelas.
 
 3. Mahasiswa dapat bertanya kepada asisten praktikum selama jam sesi kelas maupun di luar jam kelas.
 
