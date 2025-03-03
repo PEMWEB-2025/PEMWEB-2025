@@ -239,9 +239,6 @@ composer --version
 node --version
 ```
 
-
-
-
 ## Akhir Kata
 
 Selamat, ya! Kamu sudah menyelesaikan tutorial tentang instalasi IDE dan instalasi Web Server dan memahami rencana pembelajaran untuk praktikum *PEMWEB* semester ini 🔥.
