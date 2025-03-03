@@ -91,9 +91,9 @@ Pilihlah *Aplikasi* yang sesuai dengan preferensimu:
 
 ## Akhir Kata
 
-Selamat, ya! Kamu sudah menyelesaikan tutorial tentang penggunaan Git, GitHub, instalasi IDE,  pengembangan proyek dengan Django, dan *deployment* ke Adaptable.io.
+Selamat, ya! Kamu sudah menyelesaikan tutorial tentang instalasi IDE dan instalasi Web Server dan memahami rencana pembelajaran untuk praktikum *PEMWEB* semester ini 🔥.
 
-Ke depannya, kalau sedang mengerjakan lab, jangan grogi sama banyaknya materi, ya. Santai saja, ini bukan lomba *sprint* kok; pelan-pelan saja, pasti bisa. Kode-kode itu tidak harus langsung masuk ke otak, tapi yang penting dimengerti, kan? Jadi, **jangan sampai asal *copy-paste* tanpa mengerti** ya, nanti jadi bingung sendiri. Kalau memang buntu, jangan malu untuk bertanya ke teman atau asisten dosen. Asisten dosen sudah pasti siap bantuin, kok. Jadi, semangat terus dan nikmati prosesnya. *Good luck!*
+Ke depannya, kalau sedang mengerjakan tugas, jangan grogi sama banyaknya materi, ya. Santai saja, ini bukan lomba *sprint* kok; pelan-pelan saja, pasti bisa. Kode-kode itu tidak harus langsung masuk ke otak, tapi yang penting dimengerti, kan? Jadi, **jangan sampai asal *copy-paste* tanpa mengerti** ya, nanti jadi bingung sendiri. Kalau memang buntu, jangan malu untuk bertanya ke teman atau asisten dosen. Asisten dosen sudah pasti siap bantuin 🥹🫶🏻, kok. Jadi, semangat terus dan nikmati prosesnya. *Good luck!*
 
 ## Referensi Tambahan
 
