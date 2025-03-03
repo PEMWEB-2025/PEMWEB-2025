@@ -1,3 +1,10 @@
+# Praktikum Pemrograman Website 2025
+
+<h2> Tim Asisten Dosen: </h2> 
+
+- Abraham Willem Hersubagyo (L0122002) - Informatika 22 [Kelas A]
+- Addin Hadi Rizal (L0122003) - Informatika 22 [Kelas A]
+
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.

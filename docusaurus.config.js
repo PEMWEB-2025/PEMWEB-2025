@@ -89,7 +89,7 @@ const config = {
             items: [
               {
                 label: "Materi",
-                to: "/docs/",
+                to: "/docs/intro/",
               },
               {
                 label: "GitHub",
