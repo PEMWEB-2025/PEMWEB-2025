@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Praktikum Pemrograman Website",
-  tagline: "Odd Semester 2024/2025",
+  tagline: "Even Semester 2024/2025",
   favicon: "img/logo.png",
 
   // Set the production url of your site here
