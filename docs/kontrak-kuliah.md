@@ -61,18 +61,18 @@ Berikut tabel Rencana Materi Pembelajaran :
 | **_Pertemuan_**    | **_Materi_**  |
 |--------------------|---------------|
 | **Pertemuan - 1**  | Kontrak Praktikum dan Instalasi Web Server |
-| **Pertemuan - 2**  | HTML dan CSS |
-| **Pertemuan - 3**  | Javascript |
-| **Pertemuan - 4**  | JQuery |
-| **Pertemuan - 5**  | Ajax |
-| **Pertemuan - 6**  | PHP Native |
-| **Pertemuan - 7**  | OOP (Object Oriented Programming) |
-| **Pertemuan - 8**  | Form Validation |
+| **Pertemuan - 2**  | HTML |
+| **Pertemuan - 3**  | CSS |
+| **Pertemuan - 4**  | Javascript |
+| **Pertemuan - 5**  | JQuery |
+| **Pertemuan - 6**  | Ajax |
+| **Pertemuan - 7**  | PHP Native & Database MySQL |
+| **Pertemuan - 8**  | OOP (Object Oriented Programming) + Form Validation |
 | **Pertemuan - 9**  | Session & Cookie |
 | **Pertemuan - 10** | Laravel 1 (MVC Routes) |
-| **Pertemuan - 11** | Laravel 2 (Migration Seeder Factory) |
-| **Pertemuan - 12** | Laravel 3 (Authentication) |
-| **Pertemuan - 13** | Laravel 4 (Create, Read, Update, Delete) |
+| **Pertemuan - 11** | Laravel 2 (Migration Seeder Factory) & (Authentication) |
+| **Pertemuan - 12** | Laravel 3 (Create, Read, Update, Delete) |
+| **Pertemuan - 13** | Laravel 4 (Search Function) |
 | **Pertemuan - 14** | Checking Tugas Besar dan Pengumpulan Akhir Tugas |
 
 ## Instalasi Web Server
@@ -255,6 +255,8 @@ Ke depannya, kalau sedang mengerjakan tugas, jangan grogi sama banyaknya materi,
 
 - Addin Hadi Rizal
 - Abraham Willem Hersubagyo
+- Bani Rijal Barru Faza
+- Mohammed Nasser
 
 ## Credits
 
