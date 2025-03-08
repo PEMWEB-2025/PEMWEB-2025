@@ -20,11 +20,11 @@ Setelah menyelesaikan tutorial ini, mahasiswa diharapkan untuk dapat:
 
 ## Tutorial: Instalasi IDE
 
-IDE (*Integrated Development Environment*) adalah perangkat lunak yang membantu para pengembang dalam menulis, mengedit, dan mengelola kode. Berikut adalah langkah-langkah untuk memasang IDE.
+IDE (_Integrated Development Environment_) adalah perangkat lunak yang membantu para pengembang dalam menulis, mengedit, dan mengelola kode. Berikut adalah langkah-langkah untuk memasang IDE.
 
-### Langkah 1: Pemilihan *Text Editor* atau IDE
+### Langkah 1: Pemilihan _Text Editor_ atau IDE
 
-Pilihlah *text editor* atau IDE yang sesuai dengan preferensimu. Beberapa pilihan populer yang dapat kamu pertimbangkan meliputi:
+Pilihlah _text editor_ atau IDE yang sesuai dengan preferensimu. Beberapa pilihan populer yang dapat kamu pertimbangkan meliputi:
 
 - [Vim](http://www.vim.org/download.php)
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -34,8 +34,8 @@ Pilihlah *text editor* atau IDE yang sesuai dengan preferensimu. Beberapa piliha
 ### Langkah 2: Proses Instalasi
 
 1. Pergi ke situs web resmi IDE yang kamu pilih.
-2. Ikuti petunjuk yang diberikan untuk mengunduh *installer* IDE.
-3. Jalankan *installer* dan ikuti instruksi di layar untuk menyelesaikan proses instalasi.
+2. Ikuti petunjuk yang diberikan untuk mengunduh _installer_ IDE.
+3. Jalankan _installer_ dan ikuti instruksi di layar untuk menyelesaikan proses instalasi.
 
 ### Langkah 3: Memulai Menggunakan IDE
 
@@ -45,48 +45,60 @@ Pilihlah *text editor* atau IDE yang sesuai dengan preferensimu. Beberapa piliha
 **Catatan:**
 
 - Pastikan kamu memilih IDE yang sesuai dengan jenis proyek yang akan dikerjakan.
-- Jangan ragu untuk mengeksplorasi fitur-fitur IDE (contoh: *extensions* atau *plugin*) dan memanfaatkan sumber daya pendukung, seperti dokumentasi dan tutorial, untuk meningkatkan produktivitas dalam pengembangan perangkat lunak.
+- Jangan ragu untuk mengeksplorasi fitur-fitur IDE (contoh: _extensions_ atau _plugin_) dan memanfaatkan sumber daya pendukung, seperti dokumentasi dan tutorial, untuk meningkatkan produktivitas dalam pengembangan perangkat lunak.
 
 ## Extension Yang Diperlukan
 
 Sementara temen" mungkin butuh extension ini dan mungkin beberapa dari kalian sudah ada yang punya:
+
 1. Code Runner, Extension ID -> **`formulahendry.code-runner`**
 2. Live Server, Extension ID -> **`ritwickdey.LiveServer`**
 3. HTML CSS Support, Extension ID -> **`ecmel.vscode-html-css`**
 4. Auto Rename Tag, Extension ID -> **`formulahendry.auto-rename-tag`**
 
 ## Rencana Materi Pembelajaran
-Berikut tabel Rencana Materi Pembelajaran : 
 
-| **_Pertemuan_**    | **_Materi_**  |
-|--------------------|---------------|
-| **Pertemuan - 1**  | Kontrak Praktikum dan Instalasi Web Server |
-| **Pertemuan - 2**  | HTML |
-| **Pertemuan - 3**  | CSS |
-| **Pertemuan - 4**  | Javascript |
-| **Pertemuan - 5**  | JQuery |
-| **Pertemuan - 6**  | Ajax |
-| **Pertemuan - 7**  | PHP Native & Database MySQL |
-| **Pertemuan - 8**  | OOP (Object Oriented Programming) + Form Validation |
-| **Pertemuan - 9**  | Session & Cookie |
-| **Pertemuan - 10** | Laravel 1 (MVC Routes) |
+Berikut tabel Rencana Materi Pembelajaran :
+
+| **_Pertemuan_**    | **_Materi_**                                            |
+| ------------------ | ------------------------------------------------------- |
+| **Pertemuan - 1**  | Kontrak Praktikum dan Instalasi Web Server              |
+| **Pertemuan - 2**  | HTML                                                    |
+| **Pertemuan - 3**  | CSS                                                     |
+| **Pertemuan - 4**  | Javascript                                              |
+| **Pertemuan - 5**  | JQuery                                                  |
+| **Pertemuan - 6**  | Ajax                                                    |
+| **Pertemuan - 7**  | PHP Native & Database MySQL                             |
+| **Pertemuan - 8**  | OOP (Object Oriented Programming) + Form Validation     |
+| **Pertemuan - 9**  | Session & Cookie                                        |
+| **Pertemuan - 10** | Laravel 1 (MVC Routes)                                  |
 | **Pertemuan - 11** | Laravel 2 (Migration Seeder Factory) & (Authentication) |
-| **Pertemuan - 12** | Laravel 3 (Create, Read, Update, Delete) |
-| **Pertemuan - 13** | Laravel 4 (Search Function) |
-| **Pertemuan - 14** | Checking Tugas Besar dan Pengumpulan Akhir Tugas |
+| **Pertemuan - 12** | Laravel 3 (Create, Read, Update, Delete)                |
+| **Pertemuan - 13** | Laravel 4 (Search Function)                             |
+| **Pertemuan - 14** | Checking Tugas Besar dan Pengumpulan Akhir Tugas        |
 
 ## Instalasi Web Server
 
 ### Langkah 1: Pemilihan App buat akses web server
 
-Pilihlah *Aplikasi* yang sesuai dengan preferensimu:
+Pilihlah _Aplikasi_ yang sesuai dengan preferensimu (Composer membutuhkan PHP. Pastikan kamu sudah memiliki PHP atau XAMPP karena XAMPP sudah memiliki PHP di dalamnya):
 
-**`Windows`** : 
+**`Windows`** :
+
 1. [Laragon](https://laragon.org)
-2. [Herd For Windows](https://herd.laravel.com/windows) 
+2. [Herd For Windows](https://herd.laravel.com/windows)
+3. [Composer For Windows](https://getcomposer.org/doc/00-intro.md#using-the-installer)
+4. [XAMPP for Windows](https://www.apachefriends.org/download.html)
 
-**`MacOS`** : 
+**`MacOS`** :
+
 1. [Herd For MacOS](https://herd.laravel.com)
+2. [Composer For MacOS](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos)
+
+**`Linux`**:
+
+1. [XAMPP for Linux](https://www.apachefriends.org/download.html)
+2. [Composer For Linux](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos)
 
 ### Langkah 2: Install untuk Windows
 
@@ -142,7 +154,7 @@ Kalian bisa download versi **ZIP** pada tiap" website resminya.
 [PHP](https://www.php.net/downloads.php)
 [NdeJS](https://nodejs.org/en/download)
 
-Setelah mendownload versi zip nya masuk ke folder laragon kalian lalu copy paste file zip nya tadi dan taruh di folder php atau nodejs lalu extract file. Jika sudah file *ZIP* nya bisa dihapus. 
+Setelah mendownload versi zip nya masuk ke folder laragon kalian lalu copy paste file zip nya tadi dan taruh di folder php atau nodejs lalu extract file. Jika sudah file _ZIP_ nya bisa dihapus.
 
 **`/laragon/bin/php/`**
 
@@ -152,7 +164,7 @@ Setelah mendownload versi zip nya masuk ke folder laragon kalian lalu copy paste
 
 **Step 1: Install Laravel Herd for Windows**
 
-Sekarang kita akses situr resmi (https://herd.laravel.com/windows). Pada halaman web Laravel Herd Kita bisa lihat button *Download for Windows*. Untuk memulai proses download Laravel Herd installer, tekan button tersebut. Kita tunggu sampai proses download selesai. Setelah selesai kita bisa lihat ada file Herd-1.11.1-setup.exe (Versi laravel herd installer pada saat panduan ini ditulis).
+Sekarang kita akses situr resmi (https://herd.laravel.com/windows). Pada halaman web Laravel Herd Kita bisa lihat button _Download for Windows_. Untuk memulai proses download Laravel Herd installer, tekan button tersebut. Kita tunggu sampai proses download selesai. Setelah selesai kita bisa lihat ada file Herd-1.11.1-setup.exe (Versi laravel herd installer pada saat panduan ini ditulis).
 
 **Step 2: Run Laravel Herd Installer**
 
@@ -160,19 +172,19 @@ Setelah laravel herd installer selesai kita download, kita run installler dengan
 
 ![run](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*dsZxEb_q66QjqdE5GAHC5w.png)
 
-Catatan: Laravel herd perlu permission sebagai admin supaya installer dapat menambahkan HerdHelper service yang bertanggung jawab untuk memperbaharui file *hosts*, map direktori dan link project ke domain *.test*.
+Catatan: Laravel herd perlu permission sebagai admin supaya installer dapat menambahkan HerdHelper service yang bertanggung jawab untuk memperbaharui file _hosts_, map direktori dan link project ke domain _.test_.
 
 **Step3: Run Laravel Herd**
 
 ![lets](https://cdn.jsdelivr.net/gh/gungunpriatna/tes-repositori@master/how-to/install-tools/laravel-herd/1%20tampilan%20awal%20setelah%20install.png)
 
-Setelah proses instalasi selesai, selanjutnya kita bisa run langsung laravel herd yang sudah kita install. Ketika pertama kali laravel herd kita run, kita akan membuka windows untuk setup awal. Untuk melanjutkan, kita tekan button *Let's get started* untuk memulai proses setup awal laravel herd.
+Setelah proses instalasi selesai, selanjutnya kita bisa run langsung laravel herd yang sudah kita install. Ketika pertama kali laravel herd kita run, kita akan membuka windows untuk setup awal. Untuk melanjutkan, kita tekan button _Let's get started_ untuk memulai proses setup awal laravel herd.
 
 Selanjutnya laravel herd akan mendownload php, node js dan tools lainnya.
 
 ![php](https://cdn.jsdelivr.net/gh/gungunpriatna/tes-repositori@master/how-to/install-tools/laravel-herd/2%20install%20php%208.3.png)
 
-Setelah proses download selesai, selanjutnya akan masuk ke windows untuk aktivasi laraverd herd pro. Kita bisa tekan link *Skip for now* untuk menyelesaikan proses setup laravel herd.
+Setelah proses download selesai, selanjutnya akan masuk ke windows untuk aktivasi laraverd herd pro. Kita bisa tekan link _Skip for now_ untuk menyelesaikan proses setup laravel herd.
 
 ![skip](https://cdn.jsdelivr.net/gh/gungunpriatna/tes-repositori@master/how-to/install-tools/laravel-herd/3.%20aktivasi%20laravel%20herd%20pro.png)
 
@@ -222,7 +234,7 @@ v23.0.0
 
 ![mac](https://i.postimg.cc/G2Hftx1v/image.png)
 
-Kalau untuk ini langsung aja ke websitenya langsung klik Download fow macos (https://herd.laravel.com) 
+Kalau untuk ini langsung aja ke websitenya langsung klik Download fow macos (https://herd.laravel.com)
 
 **Step 2: Buka aplikasi Herd nya**
 
@@ -240,11 +252,131 @@ composer --version
 node --version
 ```
 
+### XAMPP for Windows
+
+> **Note:** Pilihlah XAMPP sebagai alternatif untuk Herd atau Laragon, karena Herd dan Laragon sudah menyediakan semua dependency yang dibutuhkan untuk development Laravel.
+
+**Step 1: Download XAMPP**
+Kamu bisa mendownload XAMPP dari website resminya:
+
+[XAMPP](https://www.apachefriends.org/download.html)
+
+**Step 2: Instalasi XAMPP**
+
+1. Buka file installer xampp-windows.exe yang telah didownload
+2. Klik **Next** untuk memulai instalasi
+3. Pilih komponen yang diinstal (Disarankan untuk memilih Apache web server, MySQL, PHP, dan phpMyAdmin)
+4. Pilih lokasi instalasi (default: C:\xampp)
+5. Klik **Next** hingga proses instalasi selesai
+
+**Step 3: Verifikasi Instalasi**
+
+1. Buka **XAMPP Control Panel** dan jalankan **Apache** dan **MySQL**.
+2. Buka browser dan akses:
+
+```
+http://localhost/
+```
+
+Jika ada halaman dokumentasi xampp, maka instalasi sudah berhasil.
+
+### Composer for Windows
+
+> **Note:** Penggunaan composer membutuhkan PHP. Kamu bisa mendownload XAMPP terlebih dahulu melalui tutorial di atas. Dengan menginstall XAMPP, kamu bakal punya PHP secara otomatis karena XAMPP adalah: Cross-Platform, Apache, MySQL, PHP, Perl. Ingat bahwa instalasi XAMPP ini hanya diperlukan jika kamu menggunakan composer dan tidak menggunakan Herd atau Laragon karena kedua laravel dependency tersebut sudah memiliki semua kebutuhan untuk delevop laravel.
+
+**Step 1: Install Composer**
+
+Buka website composer dan install composer dengan mengklik Composer-Setup.exe
+
+[Composer](https://getcomposer.org/doc/00-intro.md#using-the-installer)
+
+**Step 2: Jalankan Installer**
+
+1. Buka File **Composer-Setup.exe** yang telah didownload
+2. Plih lokasi instalasi (misal: C:\composer)
+3. Klik **Next** dan lanjutkan proses instalasi. Pilih settingan default saja untuk saat ini.
+
+**Step 3: Verifikasi Instalasi**
+Setelah proses instalasi selesai, buka **Command Prompt (CMD)** dan jalankan
+
+```
+composer -V
+```
+
+Jika Composer terinstal dengan benar, maka akan muncul output seperti:
+
+```
+Composer version 2.x.x YYYY-MM-DD HH:MM:SS
+```
+
+### Composer for MacOS
+
+> **Note:** MacOS sudah memiliki PHP bawaan, tetapi versinya bisa jadi ketinggalan. Maka pastikan untuk mengecek dan menginstall PHP jika diperlukan. Kamu bisa juga menginstall XAMPP atau MAMP dan menggunakan PHP dari sana sebagai default PHP kamu.
+
+**Step 1: Periksa dan install PHP**
+Jalankan perintah berikut untuk mengecek versi PHP
+
+```
+php -v
+```
+
+Jika PHP belum terinstall, kamu bisa menginstallnya menggunakan package manager Homebrew
+
+```
+brew install php
+```
+
+**Step 2: Install Composer**
+Jalankan perintah di bawah untuk menginstall composer
+
+```
+curl -sS https://getcomposer.org/installer | php
+```
+
+**Step 3: Pindahkan Composer ke direktori Global**
+
+```
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+**Step 4: Verifikasi Instalasi**
+
+```
+composer -V
+```
+
+### Composer for Linux
+
+> **Note:** Kebanyakan distro linux sudah menyediakan PHP dan MySQL / MariaDB service bawaan. Sehingga kamu hanya membutuhkan composer saja untuk menginstall dependency Laravel.
+
+**Step 1: Install composer**
+Jalankan perintah di bawah untuk menginstall composer melalui terminal.
+
+```
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'.PHP_EOL; } else { echo 'Installer corrupt'.PHP_EOL; unlink('composer-setup.php'); exit(1); }"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+```
+
+**Step 2: Pindahkan Composer ke direktori Global (Disarankan untuk memudahkan)**
+
+```
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+**Step 3: Verifikasi Instalasi**
+Jalankan perintah di bawah untuk verifikasi instalasi composer
+
+```
+composer -V
+```
+
 ## Akhir Kata
 
-Selamat, ya! Kamu sudah menyelesaikan tutorial tentang instalasi IDE dan instalasi Web Server dan memahami rencana pembelajaran untuk praktikum *PEMWEB* semester ini 🔥.
+Selamat, ya! Kamu sudah menyelesaikan tutorial tentang instalasi IDE dan instalasi Web Server dan memahami rencana pembelajaran untuk praktikum _PEMWEB_ semester ini 🔥.
 
-Ke depannya, kalau sedang mengerjakan tugas, jangan grogi sama banyaknya materi, ya. Santai saja, ini bukan lomba *sprint* kok; pelan-pelan saja, pasti bisa. Kode-kode itu tidak harus langsung masuk ke otak, tapi yang penting dimengerti, kan? Jadi, **jangan sampai asal *copy-paste* tanpa mengerti** ya, nanti jadi bingung sendiri. Kalau memang buntu, jangan malu untuk bertanya ke teman atau asisten dosen. Asisten dosen sudah pasti siap bantuin 🥹🫶🏻, kok. Jadi, semangat terus dan nikmati prosesnya. *Good luck!*
+Ke depannya, kalau sedang mengerjakan tugas, jangan grogi sama banyaknya materi, ya. Santai saja, ini bukan lomba _sprint_ kok; pelan-pelan saja, pasti bisa. Kode-kode itu tidak harus langsung masuk ke otak, tapi yang penting dimengerti, kan? Jadi, **jangan sampai asal _copy-paste_ tanpa mengerti** ya, nanti jadi bingung sendiri. Kalau memang buntu, jangan malu untuk bertanya ke teman atau asisten dosen. Asisten dosen sudah pasti siap bantuin 🥹🫶🏻, kok. Jadi, semangat terus dan nikmati prosesnya. _Good luck!_
 
 ## Referensi Tambahan
 
@@ -263,3 +395,4 @@ Ke depannya, kalau sedang mengerjakan tugas, jangan grogi sama banyaknya materi,
 Tutorial ini dikembangkan oleh Asisten Praktikum Pemrograman Website 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Pemrograman Website dapat menyelesaikan tutorial saat sesi lab berlangsung.
 
 [GitHub]: https://github.com/
+
