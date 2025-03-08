@@ -118,6 +118,7 @@ Semantic Web adalah konsep pengembangan web yang memungkinkan data dalam suatu h
 ## Referensi Tambahan
 - [HTML Tutorial (W3School)](https://www.w3schools.com/html/)
 - [HTML Tutorial (GeeksforGeeks)](https://www.geeksforgeeks.org/html-tutorial/)
+- [HTML Semantics](https://www.w3schools.com/html/html5_semantic_elements.asp)
 
 ## Kontributor
 
