@@ -6,7 +6,7 @@ Path: docs/index
 
 # Informasi
 
-1. Tutorial rilis setiap minggu pada hari Rabu.
+1. Tutorial rilis setiap minggu pada hari Senin.
 
 2. Tenggat waktu pengerjaan tugas dan konsekuensi apabila terlambat mengumpulkan sesuai dengan kesepakatan bersama dikelas.
 

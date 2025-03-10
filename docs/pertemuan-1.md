@@ -12,9 +12,7 @@ Pemrograman Website — diselenggarakan oleh Fakultas Teknologi Informasi dan Sa
 
 ## Apa itu HTML?
 
-<br/>
-<img src="https://emaillistvalidation.com/blog/content/images/2023/09/HTML5_logo_and_wordmark.svg.png" height="200" width="auto" />
-<br/><br/>
+![html](https://assets.cdn.dicoding.com/original/academy/dos:3456ae4a1c774455d6ad47b7c432b26120230614143148.png)
 
 HTML (HyperText Markup Language) adalah bahasa dasar untuk membuat halaman web. HTML digunakan untuk menyusun elemen-elemen dalam sebuah halaman agar dapat ditampilkan di browser.
 
