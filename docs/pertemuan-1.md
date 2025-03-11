@@ -125,7 +125,7 @@ HTML menyediakan dua tipe elemen umum (generic element) yang bisa kita kustomisa
 
 ### Div
 
-Elemen < div > merupakan sebuah wadah (container) yang bersifat umum untuk menampung beberapa konten. Elemen ini tidak akan memberikan efek apa pun pada konten atau layout sebelum menerapkan sebuah style menggunakan CSS.
+Elemen `<div>` merupakan sebuah wadah (container) yang bersifat umum untuk menampung beberapa konten. Elemen ini tidak akan memberikan efek apa pun pada konten atau layout sebelum menerapkan sebuah style menggunakan CSS.
 
 ```
 <!DOCTYPE html>
@@ -148,7 +148,7 @@ Elemen < div > merupakan sebuah wadah (container) yang bersifat umum untuk menam
 
 ### Span 
 
-Elemen < span > memberikan manfaat yang sama seperti < div >, bedanya elemen ini digunakan sebagai phrase elements dan tidak terdapat line breaks ketika menggunakannya. Sederhananya, < span > merupakan sebuah < div > yang digunakan dalam sebuah baris teks yang dapat diwadahi oleh paragraf, list, heading, atau lainnya.
+Elemen `<span>` memberikan manfaat yang sama seperti `<div>`, bedanya elemen ini digunakan sebagai phrase elements dan tidak terdapat line breaks ketika menggunakannya. Sederhananya, `<span>` merupakan sebuah `<div>` yang digunakan dalam sebuah baris teks yang dapat diwadahi oleh paragraf, list, heading, atau lainnya.
 
 ```
 <style>
@@ -163,6 +163,143 @@ Elemen < span > memberikan manfaat yang sama seperti < div >, bedanya elemen ini
   <li>Gilang: <span class="phone">08333xxx</span></li>
 </ul>
 ```
+
+### Tabel
+
+Elemen `<table>` pada HTML merepresentasikan data tabular, yaitu informasi yang disajikan dalam sebuah tabel. Tabel sendiri disajikan dalam dua dimensi terdiri dari baris dan kolom (cell) yang berisikan sebuah data. Berikut adalah contoh data sepak bola yang disajikan dalam bentuk tabel.
+
+![tabelBola](https://assets.cdn.dicoding.com/original/academy/dos:e4a8a8b68ba34879fc15a6103466a33f20230621104914.jpeg)
+
+### Struktur Dasar Tabel
+
+Tabel pada HTML disusun dari tiga buah elemen, yaitu `<table>`, `<tr>` dan `< td >` atau `<th>`. Elemen `<table>` digunakan untuk menandakan dimulainya dan diakhirinya sebuah konten tabel dan juga sebagai wadah untuk tabel itu sendiri. Kemudian elemen `<tr>` digunakan untuk membuat sebuah baris baru yang di dalamnya terdapat elemen `<td>` atau `<th>` sehingga menghasilkan sebuah sel.
+
+![strukturtabel](https://assets.cdn.dicoding.com/original/academy/dos:b33bf8e2cbd3fa59d947b667b645599a20230621104914.jpeg)
+
+### Spanning Cell
+
+Dalam aplikasi seperti Microsoft Word, hal ini biasa kita kenal sebagai merging cell atau menggabungkan sebuah sel. Ini memang menjadi sebuah fitur dasar dalam membuat sebuah tabel sehingga pada HTML pun kita dapat melakukan hal tersebut. 
+
+Pada HTML hal ini lebih dikenal sebagai spanning cell, yang artinya menjangkau atau merentangkan sebuah ukuran sel lebih dari ukuran yang biasanya. Kali ini kita belajar 2 jenis yaitu ada *Column Spans* dan *Row Spans*.
+
+Untuk merentangkan sebuah kolom (column spanning) kita bisa menggunakan atribut colspan pada elemen `<td>` atau `<th>`. Berikut adalah contoh untuk penggunaan colspan sehingga sebuah header mencakup dua kolom.
+
+#### Column Spans 
+```
+<table>
+  <tr>
+    <th>18:00</th>
+    <th>19:00</th>
+    <th>20:00</th>
+  </tr>
+  <tr>
+    <td colspan="2">Avenger Infinity Wars</td>
+    <td>It Chapter 2</td>
+  </tr>
+  <tr>
+    <td>One Piece: Stampede</td>
+    <td>Weathering With You</td>
+    <td>Gundala</td>
+  </tr>
+  <tr>
+    <td>Gundala</td>
+    <td colspan="2">Avenger Infinity Wars</td>
+  </tr>
+</table>
+```
+
+#### Row Spans 
+
+Untuk merentangkan sebuah baris (row spanning) kita dapat menggunakan atribut rowspan. Mirip seperti column spanning, tetapi atribut ini akan merentangkan sebuah sel ke bawah. Berikut contohnya.
+```
+<table border="1">
+  <tr>
+    <th rowspan="3">18:00</th>
+    <td>Avenger Infinity Wars</td>
+  </tr>
+  <tr>
+    <td>One Piece: Stampede</td>
+  </tr>
+  <tr>
+    <td>Gundala</td>
+  </tr>
+</table>
+```
+
+## Input User
+Hampir seluruh website memiliki elemen input. Data yang dimasukkan akan diproses untuk kebutuhan operasional website dalam menunjang pekerjaan manusia. Ada banyak sekali macam-macam input di dunia ini. Namun, jangan khawatir! HTML menyediakan beragam input yang dapat dimanfaatkan. Berikut daftarnya.
+
+### Input Element
+
+Elemen `<input>` merupakan elemen yang sangat sering dipakai untuk mendapatkan data dari user. Mengapa hal tersebut terjadi? Hal ini karena elemen input memiliki banyak sekali tipe-tipenya, mulai dari teks, password, email, search, file, dsb. Tidak hanya itu, dari sekian tipe input, masing-masingnya juga didukung oleh atribut khusus sehingga pembuatan formulir semakin powerful.
+```
+<div>
+  Text:
+  <input type="text" />
+</div>
+<div>
+  Number:
+  <input type="number" />
+</div>
+<div>
+  Email:
+  <input type="email" />
+</div>
+<div>
+  Password:
+  <input type="password" />
+</div>
+```
+
+### Textarea Element
+HTML memiliki elemen khusus yang memungkinkan user menuliskan teks dalam banyak baris. Kenalilah elemen `<textarea>`! Elemen ini berbeda dengan elemen input sebelumnya. Selain nama elemen yang menjadi pembeda, elemen textarea memiliki tag penutup agar dapat berfungsi dengan baik.
+```
+<textarea rows="6" cols="16">
+Belajar
+Dasar
+Pemrograman
+Web
+</textarea>
+```
+
+### Label Element
+Pembuatan elemen input sudah umum jika dijajarkan dengan elemen label. Ada banyak sekali keuntungan jika memberikan keterangan pada masing-masing elemen input. Beberapa keuntungan penerapan label untuk elemen input sebagai berikut.
+
+Elemen input yang berasosiasi dengan elemen label akan memberikan kemampuan bagi screen reader untuk menjelaskan fungsi dari elemen input tersebut.
+Memberikan kemampuan bagi browser untuk mengalihkan langsung pada elemen input saat elemen label yang berasosiasi dengannya ditekan atau klik.
+```
+<div>
+  <label for="email">Email</label>
+  <br>
+  <input type="email" id="email" />
+</div>
+ 
+<div>
+  <label for="password">Password</label>
+  <br>
+  <input type="password" id="password" />
+</div>
+```
+
+## Atribute Pada Element Input
+Selain banyaknya variasi elemen input, ada banyak atribut yang tersedia untuk memaksimalkan pembuatan formulir. Ada atribut yang bekerja untuk semua tipe input dan ada atribut yang hanya dikhususkan bagi satu tipe.
+
+Berikut adalah contoh penerapan atribut placeholder dan required.
+```
+<div>
+  <label for="email">Email</label>
+  <br />
+  <input type="email" id="email" placeholder="example@mail.com" required />
+</div>
+
+<div>
+  <label for="password">Password</label>
+  <br />
+  <input type="password" id="password" placeholder="********" required />
+</div>
+```
+
+> Elemen label tidak dapat digantikan oleh atribut placeholder. Kedua hal ini memiliki peranannya sendiri dalam membuat formulir. Placeholder berfungsi sebagai petunjuk user dalam mengisi data, bukan untuk memberi keterangan atau caption elemen input.
 
 ## Kesimpulan
 
