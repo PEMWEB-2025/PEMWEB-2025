@@ -301,6 +301,40 @@ Berikut adalah contoh penerapan atribut placeholder dan required.
 
 > Elemen label tidak dapat digantikan oleh atribut placeholder. Kedua hal ini memiliki peranannya sendiri dalam membuat formulir. Placeholder berfungsi sebagai petunjuk user dalam mengisi data, bukan untuk memberi keterangan atau caption elemen input.
 
+## Mengirim Data Formulir
+![data](https://assets.cdn.dicoding.com/original/academy/dos:bdb23ce5cc1fdaeb0332561e1b77854f20230620071038.jpeg)
+Ketika client membutuhkan resources guna menampilkan halaman web ke pengguna, ia akan mengirimkan request ke server tentang kebutuhan yang dimaksud. HTML, CSS, JavaScript, serta aset-aset lainnya merupakan resources yang akan dikirimkan dan di-render oleh browser sehingga tampillah halaman web yang utuh. Nah, hal tersebut merupakan proses yang serupa yang akan dilakukan oleh browser dan server.
+![data](https://assets.cdn.dicoding.com/original/academy/dos:fad9aa23f47230b56c12252522f9870e20230620071038.jpeg)
+Ada satu elemen yang berfungsi sebagai wrapper (pembungkus) dari keseluruhan kolom input atau formulir. Elemen yang dimaksud adalah `<form>`.
+```
+<form>
+  <div>
+    <label for="email">Email</label>
+    <br />
+    <input type="email" id="email" />
+  </div>
+ 
+  <div>
+    <label for="password">Password</label>
+    <br />
+    <input type="password" id="password" />
+  </div>
+ 
+  <button type="submit">Submit</button>
+</form>
+```
+
+## Special Character
+Ada beberapa karakter spesial seperti copyright symbol (©) yang tidak termasuk ke dalam standar kelompok ASCII characters. ASCII characters hanya menyediakan karakter seperti huruf, nomor, dan beberapa simbol dasar lainnya.
+
+HTML memerlukan sebuah “escaped” character untuk menampilkan karakter khusus. Ada dua cara untuk melakukannya, yakni menetapkan nilai numerik (numeric entity) atau menggunakan nama singkatan yang sudah ditetapkan untuk masing-masing karakternya (named entity). Semua referensi karakter dimulai dengan “&” dan diakhiri dengan “;”.
+```
+<p>Addin ganteng bangett &copy; 2025, UNS</p>
+<!-- Juga bisa menggunakan &#169; -->
+<p>Addin ganteng bangett &#169; 2025, UNS</p>
+```
+Tampilannya sama saja.
+
 ## Kesimpulan
 
 - HTML adalah bahasa dasar untuk membuat halaman web.
