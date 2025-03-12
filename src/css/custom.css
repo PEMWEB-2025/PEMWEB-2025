@@ -32,4 +32,8 @@
 .no-copy {
   user-select: none; /* Mencegah seleksi teks */
   pointer-events: none; /* Mencegah klik kanan */
+  overflow-x: scroll;
+  max-width: 100%; /* Pastikan tidak melebihi lebar container */
+  white-space: pre-wrap !important;
 }
+
