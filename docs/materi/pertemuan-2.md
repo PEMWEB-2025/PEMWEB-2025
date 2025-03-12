@@ -1,10 +1,10 @@
 ---
-sidebar_label: "Pertemuan 1: Pengenalan dan Pendalaman HTML"
+sidebar_label: "Pertemuan 2: Pengenalan dan Pendalaman HTML"
 sidebar_position: 2
-Path: docs/materi/pertemuan-1
+Path: docs/materi/pertemuan-2
 ---
 
-# Pertemuan 1: Dasar-Dasar HTML
+# Pertemuan 2: Pengenalan dan Pendalaman HTML
 
 Pemrograman Website — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Universitas Sebelas Maret, Semester Genap 2024/2025
 
