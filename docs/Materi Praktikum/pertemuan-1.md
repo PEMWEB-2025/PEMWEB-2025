@@ -1,7 +1,7 @@
 ---
-sidebar_label: "Pertemuan 1: Dasar-Dasar HTML"
-sidebar_position: 3
-Path: docs/pertemuan-1
+sidebar_label: "Pertemuan 1: Pengenalan dan Pendalaman HTML"
+sidebar_position: 2
+Path: docs/materi/pertemuan-1
 ---
 
 # Pertemuan 1: Dasar-Dasar HTML
@@ -54,7 +54,7 @@ Keterangan:
 
 - `<body>` → Bagian utama tempat konten halaman web ditampilkan.
 
-Dokumen di atas sebetulnya akan membentuk sebuah hierarki elemen atau yang biasa disebut dengan DOM Tree (pohon DOM). Ini dapat Anda analogikan seperti silsilah keluarga. Kurang lebih, berikut adalah DOM Tree yang terbentuk dari dokumen HTML di atas.
+Dokumen di atas sebetulnya akan membentuk sebuah hierarki elemen atau yang biasa disebut dengan DOM Tree (pohon DOM). Ini dapat Temen" analogikan seperti silsilah keluarga. Kurang lebih, berikut adalah DOM Tree yang terbentuk dari dokumen HTML di atas.
 
 ![domHTML](https://assets.cdn.dicoding.com/original/academy/dos:0f3821d245d66fccb2a3e6e48c11095d20230623095802.png)
 

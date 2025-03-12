@@ -1,7 +1,7 @@
 ---
 sidebar_label: Kontrak Kuliah Praktikum
-sidebar_position: 2
-Path: docs/kontrak-kuliah
+sidebar_position: 1
+Path: docs/materi/kontrak-kuliah
 ---
 
 # Kontrak Kuliah: Praktikum Pemrograman Website
