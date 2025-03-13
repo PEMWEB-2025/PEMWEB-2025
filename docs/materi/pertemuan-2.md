@@ -353,6 +353,8 @@ Tampilannya sama saja.
 - [HTML Tutorial (W3School)](https://www.w3schools.com/html/)
 - [HTML Tutorial (GeeksforGeeks)](https://www.geeksforgeeks.org/html-tutorial/)
 - [HTML Semantics](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+- [HTML Atribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
 
 ## Kontributor
 
