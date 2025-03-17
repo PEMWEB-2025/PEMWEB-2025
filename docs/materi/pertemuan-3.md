@@ -410,8 +410,119 @@ a[href$='.org'] {
   color: red;
 }
 ```
-Dari kode di atas, terlihat banyak sekali kondisi yang dapat diterapkan pada attribut selector. Agar dapat lebih mudah memahaminya, mari kita rangkum dalam sebuah tabel.
 
-| Syntax | Description |
-| ------ | ----------- |
+## Flexbox
 
+### Apa itu Flexbox?
+Flexbox (Flexible Box Layout) adalah teknik CSS yang mempermudah pengaturan layout elemen secara fleksibel. Dengan Flexbox, kamu bisa menyusun elemen secara horizontal atau vertikal tanpa perlu repot pakai float atau position.
+
+### Cara Menggunakan Flexbox
+Untuk mengaktifkan Flexbox, cukup tambahkan display: flex; pada elemen pembungkus (container).
+Contoh:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-color: lightgray;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
+```
+
+### Properti Penting dalam Flexbox
+| **_Properti_** | **_Kegunaan_** |
+| -------------- | -------------- |
+| display: flex; | Mengaktifkan Flexbox |
+| justify-content | Mengatur posisi elemen secara horizontal |
+| align-items | Mengatur posisi elemen secara vertikal |
+| flex-direction | Menentukan susunan elemen (baris/kolom) |
+| flex-wrap | Mengatur apakah elemen tetap dalam satu baris atau pindah ke baris baru |
+
+## CSS Grid
+### Apa itu CSS Grid?
+CSS Grid adalah teknik layout yang lebih kuat daripada Flexbox karena bisa mengatur baris dan kolom secara bersamaan.
+
+### Cara Menggunakan CSS Grid
+Untuk menggunakan Grid, cukup tambahkan display: grid; pada elemen pembungkus, lalu atur jumlah kolom dengan grid-template-columns.
+Contoh:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .box {
+            background-color: coral;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
+</html>
+```
+
+### Properti Penting dalam CSS Grid
+| **_Properti_** | **_Fungsi_** |
+| -------------- | ------------ |
+| display: grid; | Mengaktifkan Grid |
+| grid-template-columns | Menentukan jumlah kolom |
+| grid-template-rows | Menentukan jumlah baris |
+| gap | Jarak antar elemen |
+| justify-items | Mengatur posisi elemen secara horizontal |
+| align-items | Mengatur posisi elemen secara vertikal |
+
+## Kesimpulan
+- CSS adalah bahasa untuk menghias website.
+- Ada 3 cara menulis CSS: inline, internal, dan eksternal.
+- Flexbox dan Grid dapat mempermudah pengaturan layout halaman.
+- Dengan Flexbox dan Grid, elemen bisa lebih rapi, sejajar, dan mudah diatur.
+
+## Kontributor
+- Addin Hadi Rizal
+- Abraham Willem Hersubagyo
+- Bani Rijal Barru Faza
+- Mohammed Nasser
+
+## Credits
+Tutorial ini dikembangkan oleh Asisten Praktikum Pemrograman Website 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Pemrograman Website dapat menyelesaikan tutorial saat sesi lab berlangsung.
