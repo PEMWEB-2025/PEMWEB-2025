@@ -146,3 +146,106 @@ if (nilai >= kkm) {
   console.log('Maaf, tidak lulus');
 }
 ```
+
+## Perulangan
+### Perulangan `for`
+```
+for (let i = 1; i <= 5; i++) {
+  console.log("Perulangan ke-" + i);
+}
+```
+
+### Perulangan `while`
+```
+let angka = 1;
+while (angka <= 3) {
+  console.log("Angka: " + angka);
+  angka++;
+}
+```
+
+### Perulangan `for ... in`
+Biasanya perulangan ini digunakan untuk mengambil nilai dari suatu object. Contoh:
+```
+let siswa = {
+  nama: "Dina",
+  umur: 13,
+  kelas: "8A"
+};
+
+for (let key in siswa) {
+  console.log(key + ": " + siswa[key]);
+}
+```
+
+### Perulangan `for ... of`
+Biasanya perulangan ini digunakan untuk mengambil nilai dari suatu array dan atau string. Contoh dengan array:
+```
+let buah = ["apel", "jeruk", "mangga"];
+
+for (let item of buah) {
+  console.log(item);
+}
+```
+
+Contoh dengan string:
+```
+let teks = "Halo";
+
+for (let huruf of teks) {
+  console.log(huruf);
+}
+```
+
+## Fungsi
+### Deklarasi Fungsi Klasik
+```
+function halo(nama) {
+  return ("Halo, " + nama);
+}
+```
+
+### Function Expression
+```
+const halo = function(nama) {
+  return ("Halo, " + nama);
+};
+```
+
+### Arrow Function
+```
+const halo = (nama) => {
+  return ("Halo, " + nama);
+};
+```
+
+Arrow function tidak punya `this` sendiri, jadi tidak cocok dipakai di object method atau saat kamu benar-benar butuh `this`. Contoh:
+```
+const orang = {
+  nama: "Rani",
+  sapa: () => {
+    return ("Halo, aku " + this.nama); // ❌ this di sini undefined
+  }
+};
+```
+
+## DOM 
+### Apa itu DOM?
+DOM (Document Object Model) adalah representasi dari halaman web dalam bentuk struktur seperti pohon (tree) yang bisa dibaca dan dimanipulasi oleh JavaScript. Contoh:
+
+HTML
+```
+<body>
+  <h1>Halo!</h1>
+  <p>Selamat datang di website</p>
+</body>
+```
+
+DOM
+```
+Document
+└── html
+    └── body
+        ├── h1
+        └── p
+```
