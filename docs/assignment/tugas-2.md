@@ -23,6 +23,7 @@ Tugas dikumpulkan dalam format *Portable Document File* (`*.pdf`) untuk laporan 
 Pengumpulan tugas pada `Google Classroom` masing" kelas.
 
 ## Tenggat Waktu Pengerjaan
+*#Disclaimer: Untuk tenggat waktu menyesuaikan asdos masing" yaa*
 
 Tenggat waktu pengerjaan Tugas 2 adalah hari **Selasa, 01 April 2025, pukul 23.59**.
 
