@@ -249,3 +249,85 @@ Document
         ├── h1
         └── p
 ```
+
+### Mengakses HTML Dengan DOM
+Ada beberapa cara untuk mengakses elemen HTML dengan menggunakan DOM. Beberapa di antaranya adalah:
+| Cara | Fungsi |
+| ---- | ------ |
+| getElementById("id") | Ambil elemen berdasarkan id |
+| getElementsByClassName("class") |	Ambil semua elemen dengan class |
+| getElementsByTagName("p") |	Ambil semua elemen berdasarkan tag |
+| querySelector("selector") |	Ambil elemen pertama yang cocok dengan CSS selector |
+| querySelectorAll("selector") |	Ambil semua elemen yang cocok |
+
+### Mengubah Konten dan Properti Dengan DOM
+| Aksi |	Contoh |
+| ---- | ------- |
+| Mengubah teks |	element.textContent = "Halo!" |
+| Mengubah HTML |	element.innerHTML = "<b>Hai!</b>" |
+| Mengubah atribut |	element.setAttribute("href", "https://google.com") |
+| Menghapus atribut |	element.removeAttribute("src") |
+
+### Mengubah CSS Dengan DOM
+```
+const box = document.getElementById("kotak");
+
+box.style.backgroundColor = "red";
+box.style.fontSize = "20px";
+```
+
+### Menambah dan Menghapus Elemen HTML
+```
+// Buat elemen baru
+const paragraf = document.createElement("p");
+paragraf.textContent = "Paragraf baru!";
+
+// Tambahkan ke halaman
+document.body.appendChild(paragraf);
+
+// Hapus elemen
+paragraf.remove();
+```
+
+### Event Listener
+Event Listener adalah fungsi yang akan dijalankan ketika suatu event (kejadian) terjadi pada sebuah elemen HTML. Contohnya:
+- Klik tombol → tampilkan pesan
+- Hover ke gambar → ubah warna
+- Isi input → tampilkan teks secara real-time
+
+#### Bentuk dasar Event Listener:
+```
+element.addEventListener("event", function);
+```
+
+Contoh Event Listener pada Javascript:
+```
+const tombol = document.querySelector("#klik");
+
+tombol.addEventListener("click", function() {
+  alert("Tombol diklik!");
+});
+```
+
+#### Jenis-jenis Event pada Event Listener
+| Event |	Kapan Terjadi |
+| ----- | ------------- |
+| "click" |	Ketika elemen diklik
+| "mouseover" |	Saat kursor masuk ke elemen |
+| "mouseout" |	Saat kursor keluar dari elemen |
+| "keydown" |	Saat tombol keyboard ditekan |
+| "keyup" |	Saat tombol keyboard dilepas |
+| "input" |	Saat pengguna mengetik dalam input field |
+| "submit" |	Saat form dikirim |
+| "change" |	Saat isi input berubah (biasanya select, radio) |
+
+## Kontributor
+
+- Addin Hadi Rizal
+- Abraham Willem Hersubagyo
+- Bani Rijal Barru Faza
+- Mohammed Nasser
+
+## Credits
+
+Tutorial ini dikembangkan oleh Asisten Praktikum Pemrograman Website 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Pemrograman Website dapat menyelesaikan tutorial saat sesi lab berlangsung.
