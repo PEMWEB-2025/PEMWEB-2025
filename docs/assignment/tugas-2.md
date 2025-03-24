@@ -18,7 +18,7 @@ Meneruskan tugas `Website Sederhana` kemarin dengan ketentuan berikut:
 
 Tugas dikumpulkan dalam format *Portable Document File* (`*.pdf`) untuk laporan dan source code dalam bentuk *ZIP* isinya `html` dan `CSS` dengan ketentuan nama berkas `PPW25-02_NIM_Nama.pdf`.
 
-[Template Laporan](https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/halaman-profil-bandung-images.zip)
+[Download Template Laporan 😴](https://github.com/PEMWEB-2025/PEMWEB-2025/raw/021ac9dd5da252489ded588f940d6067e7c963c9/static/berkas/Template%20Laporan.docx)
 
 Pengumpulan tugas pada `Google Classroom` masing" kelas.
 
