@@ -16,7 +16,7 @@ Meneruskan tugas `Website Sederhana` kemarin dengan ketentuan berikut:
 
 ## Pengumpulan
 
-Tugas dikumpulkan dalam format *Portable Document File* (`*.pdf`) untuk laporan dan source code dalam bentuk *ZIP* isinya `html` dan `CSS` dengan ketentuan nama berkas `PPW25-02_NIM_Nama.pdf`.
+Tugas dikumpulkan dalam 2 format untuk laporan dalam bentuk *Portable Document File* (`*.pdf`) lalu untuk source code dalam bentuk *ZIP* isinya `html` dan `CSS` dengan ketentuan nama berkas `PPW25-02_NIM_Nama.pdf` `PPW25-02_NIM_Nama.zip`.
 
 [Download Template Laporan 😴](https://github.com/PEMWEB-2025/PEMWEB-2025/raw/021ac9dd5da252489ded588f940d6067e7c963c9/static/berkas/Template%20Laporan.docx)
 
