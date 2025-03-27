@@ -4,11 +4,11 @@ sidebar_position: 2
 Path: docs/assignment/tugas-2
 ---
 
-# Tugas 2: Membuat Website Sederhana
+# Tugas 2: Membuat Website Sederhana Dari Tugas 1
 
 # Deskripsi Tugas
 
-Meneruskan tugas `Website Sederhana` kemarin dengan ketentuan berikut:
+Meneruskan tugas `Website Sederhana` kemarin `Tugas 1` dengan ketentuan berikut:
 
 1. Mengimplementasikan Box Model, Flexbox, dan Grid didalamnya.
 2. Website hanya mengandung file html dan css saja.
