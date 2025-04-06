@@ -357,3 +357,16 @@ Kita bisa menggabungkan beberapa efek sekaligus dalam satu baris. Contoh:
 ```
 $("#box").slideUp(500).slideDown(500).fadeOut(500);
 ```
+
+
+## Kontributor
+
+- Addin Hadi Rizal
+- Abraham Willem Hersubagyo
+- Bani Rijal Barru Faza
+- Mohammed Nasser
+
+
+## Credits
+
+Tutorial ini dikembangkan oleh Asisten Praktikum Pemrograman Website 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Pemrograman Website dapat menyelesaikan tutorial saat sesi lab berlangsung.
