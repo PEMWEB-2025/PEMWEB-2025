@@ -1,4 +1,4 @@
----
+<!-- ---
 sidebar_label: Latihan Praktikum 2
 sidebar_position: 2
 Path: docs/latihan/latihan-2
@@ -130,4 +130,4 @@ footer {
   background-color: #00a2c6;
 }
 `}
-</CodeBlock>
+</CodeBlock> -->
