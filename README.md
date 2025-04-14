@@ -4,6 +4,8 @@
 
 - Abraham Willem Hersubagyo (L0122002) - Informatika 22 [Kelas A]
 - Addin Hadi Rizal (L0122003) - Informatika 22 [Kelas A]
+- Bani Rijal Barru Faza	(L0122031) - Informatika 22 [Kelas A]
+- Mohammed Nasser (L0122097) - Informatika 22 [Kelas C]
 
 # Website
 
