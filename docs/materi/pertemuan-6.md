@@ -1,10 +1,10 @@
 ---
 sidebar_label: "Pertemuan 6: AJAX"
-sidebar_position: 5
+sidebar_position: 6
 Path: docs/materi/pertemuan-6
 ---
 
-# Pertemuan 5: AJAX
+# Pertemuan 6: AJAX
 
 Pemrograman Website — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Universitas Sebelas Maret, Semester Genap 2024/2025
 
