@@ -4,7 +4,7 @@ sidebar_position: 5
 Path: docs/assignment/tugas-5
 ---
 
-# Tugas 5: Jquery
+# Tugas 5: Ajax
 
 # Deskripsi Tugas
 
@@ -13,7 +13,8 @@ Membuat website sederhana menggunakan teknik AJAX untuk mengambil sebuah data ta
 ketentuan :
 1. Mengimplementasikan AJAX pada code untuk memanggil HTTP GET method ataupun fetch local file.
 2. Boleh Menggunakan AJAX Jquery.
-3. Tema website bebas.
+3. Untuk API nya bebas boleh pake API manapun asalkan tidak menggunakan API pada meteri kelas.
+4. Tema website bebas.
 
 ## Pengumpulan
 
@@ -26,7 +27,7 @@ Pengumpulan tugas pada `Google Classroom` masing" kelas.
 ## Tenggat Waktu Pengerjaan
 *#Disclaimer: Untuk tenggat waktu menyesuaikan asdos masing" yaa*
 
-Tenggat waktu pengerjaan Tugas 4 adalah hari **Senin, 22 April 2025, pukul 23.59**.
+Tenggat waktu pengerjaan Tugas 4 adalah hari **Senin, 24 April 2025, pukul 23.59**.
 
 ## Rubrik Penilaian
 
