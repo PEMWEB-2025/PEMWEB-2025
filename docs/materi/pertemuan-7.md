@@ -14,6 +14,7 @@ Path: docs/materi/pertemuan-7
 - Bahkan hampir mayoritas kebanyakan web di dunia dibuat menggunakan PHP
 - PHP pertama kali dibuat oleh Rasmus Lerdorf pada tahun 1995
 
+<br></br>
 ## Penulisan Kode PHP
 
 Kode PHP ditulis di antara tag `<?php ... ?>`. Sebagai contoh:
@@ -23,6 +24,7 @@ echo "Hello World!";
 ?>
 ```
 
+<br></br>
 ## Variabel & Tipe Data
 
 ### Variabel
@@ -44,6 +46,7 @@ $nama = "Ayu"; // string
 $aktif = true; // boolean
 ```
 
+<br></br>
 ## Kondisi 
 
 ### IF, ELSE, dan ELSEIF
@@ -57,6 +60,7 @@ if (kondisi) {
 }
 ```
 
+<br></br>
 `if` tidak harus selalu berpasangan dengan `else`. Kamu bisa menggunakan `if` saja tanpa harus mencantumkan `else`. Sebagai contoh:
 ```
 $umur = 17;
@@ -68,6 +72,7 @@ if ($umur >= 18) {
 echo "Kamu punya akses!"
 ```
 
+<br></br>
 Jika kamu memiliki beberapa kondisi, kamu bisa menggunakan `elseif`. Sebagai contoh:
 ```
 $nilai = 75;
@@ -108,6 +113,7 @@ switch ($nilai) {
 }
 ```
 
+<br></br>
 ## Perulangan (Loop)
 
 Perulangan digunakan untuk menjalankan kode yang sama berulang kali, tanpa harus menulis ulang kodenya.
@@ -164,6 +170,7 @@ foreach ($buah as $item) {
 ?>
 ```
 
+<br></br>
 ## Function
 
 Function adalah blok kode yang bisa kamu panggil berkali-kali. Daripada menulis ulang suatu kode, kamu bisa menuliskan kode yang ingin kamu gunakan berulang kali di dalam function, kemudian kamu cukup memanggil function itu aja. 
@@ -178,6 +185,7 @@ function nama_fungsi() {
 nama_fungsi();
 ```
 
+<br></br>
 Contoh function sederhana:
 ```
 function jumlah($a, $b) {
@@ -188,6 +196,7 @@ $hasil = jumlah(5, 3);
 echo $hasil;  // Output: 8
 ```
 
+<br></br>
 ## MySQL
 
 MySQL adalah tempat menyimpan data (seperti nama pengguna, email, dll).
@@ -230,7 +239,7 @@ Analogi sederhananya seperti ini:
 
 Contoh sederhana:
 
-1. Membuat Tabel `users`
+a. Membuat Tabel `users`
 ```
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -238,7 +247,7 @@ CREATE TABLE users (
 );
 ```
 
-2. Membuat Tabel `orders` Dengan Foreign Key `user_id`
+b. Membuat Tabel `orders` Dengan Foreign Key `user_id`
 ```
 CREATE TABLE orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -248,14 +257,12 @@ CREATE TABLE orders (
 );
 ```
 
-3. Menambahkan Data ke Dalam Tabel
-
+c. Menambahkan Data ke Dalam Tabel
 - Menambahkan data pengguna
 ```
 INSERT INTO users (nama) VALUES ('Ari');
 -- Misalnya id-nya 1
 ```
-
 - Menambahkan data pesanan
 ```
 INSERT INTO orders (nama_produk, user_id) VALUES ('Laptop', 1);
@@ -277,18 +284,18 @@ FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 
 ### Koneksi PHP ke MySQL
 
-1. Aktifkan Web-Server Kalian (XAMPP, Laragon, dll)
+a. Aktifkan Web-Server Kalian (XAMPP, Laragon, dll)
 
-2. Buat Database dan Tabel di MySQL
+b. Buat Database dan Tabel di MySQL
 - Buka browser dan pergi ke alamat `http://localhost/phpmyadmin`
 - Klik 'Database' → beri nama misalnya `belajar_php` → klik 'Create'.
 
-3. Buat tabel bernama `users` dengan kolom sebagai berikut:
+c. Buat tabel bernama `users` dengan kolom sebagai berikut:
 - id (INT, AUTO_INCREMENT, PRIMARY)
 - nama (VARCHAR 100)
 - email (VARCHAR 100)
 
-4. Buat file `koneksi.php`
+d. Buat file `koneksi.php`
 
 ```
 <?php
@@ -345,5 +352,16 @@ while ($row = mysqli_fetch_assoc($result)) {
 ?>
 ```
 
-## Membuat Buku Tamu Sederhana
+<br></br>
+## Kontributor
 
+- Addin Hadi Rizal
+- Abraham Willem Hersubagyo
+- Bani Rijal Barru Faza
+- Mohammed Nasser
+
+
+<br></br>
+## Credits
+
+Tutorial ini dikembangkan oleh Asisten Praktikum Pemrograman Website 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Pemrograman Website dapat menyelesaikan tutorial saat sesi lab berlangsung.
