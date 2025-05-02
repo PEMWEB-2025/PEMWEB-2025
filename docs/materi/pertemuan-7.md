@@ -353,7 +353,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 ```
 
 <br></br>
-## Kontributor
+## Kontributor 🤝🏻
 
 - Addin Hadi Rizal
 - Abraham Willem Hersubagyo
