@@ -27,7 +27,7 @@ Pengumpulan tugas pada `Google Classroom` masing" kelas.
 ## Tenggat Waktu Pengerjaan
 *#Disclaimer: Untuk tenggat waktu menyesuaikan asdos masing" yaa*
 
-Tenggat waktu pengerjaan Tugas 6 adalah hari **Sabtu, 10 Mei 2025, pukul 23.59**.
+Tenggat waktu pengerjaan Kelas A Informatika Tugas 6 adalah hari **Sabtu, 10 Mei 2025, pukul 23.59**.
 
 ## Rubrik Penilaian
 
