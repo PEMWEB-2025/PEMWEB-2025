@@ -353,6 +353,109 @@ while ($row = mysqli_fetch_assoc($result)) {
 ```
 
 <br></br>
+## Contoh: Membuat Daftar Tamu Sederhana
+### Fitur yang Akan Dibuat
+1. Form input buku tamu: nama & pesan
+2. Validasi sederhana: wajib isi nama dan pesan
+3. Simpan ke database (MySQL)
+4. Tampilkan semua pesan yang sudah masuk
+
+### Struktur Folder
+```
+buku_tamu/
+├── index.php        ← Form + tampil data
+├── simpan.php       ← Proses simpan ke database
+├── db.php           ← Koneksi ke MySQL
+```
+
+### 1. Membuat Database di MYSQL
+
+Buka phpMyAdmin -> SQL. Kemudian paste query berikut:
+```
+CREATE DATABASE buku_tamu;
+
+USE buku_tamu;
+
+CREATE TABLE tamu (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100),
+    pesan TEXT,
+    waktu DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+### 2. Koneksi ke Database
+
+Buat file bernama `db.php`, kemudian isi file tersebut sebagai berikut:
+```
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "buku_tamu";
+
+$conn = mysqli_connect($host, $user, $pass, $db);
+
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
+}
+?>
+```
+
+### 3. Membuat Frontend
+
+Buat file dengan nama `index.php`, kemudian isi file tersebut dengan kode sebagai berikut:
+```
+<?php include 'db.php'; ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buku Tamu Online</title>
+</head>
+<body>
+    <h2>Isi Buku Tamu</h2>
+    <form method="POST" action="simpan.php">
+        Nama: <br>
+        <input type="text" name="nama" required><br><br>
+        Pesan: <br>
+        <textarea name="pesan" required></textarea><br><br>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <hr>
+    <h2>Daftar Tamu</h2>
+    <?php
+    $hasil = mysqli_query($conn, "SELECT * FROM tamu ORDER BY waktu DESC");
+    while ($row = mysqli_fetch_assoc($hasil)) {
+        echo "<p><strong>{$row['nama']}</strong> ({$row['waktu']}):<br>";
+        echo nl2br(htmlspecialchars($row['pesan'])) . "</p><hr>";
+    }
+    ?>
+</body>
+</html>
+```
+
+### 4. Membuat Proses Menyimpan Data ke Database
+
+Buat file bernama `simpan.php`, isi file tersebut dengan kode sebagai berikut:
+```
+<?php
+include 'db.php';
+
+$nama     = $_POST['nama'];
+$pesan    = $_POST['pesan'];
+
+$sql = "INSERT INTO users (nama, pesan) VALUES ('$nama', '$pesan')";
+
+if (mysqli_query($conn, $sql)) {
+    echo "Pendaftaran berhasil!";
+} else {
+    echo "Error: " . mysqli_error($conn);
+}
+?>
+```
+
+<br></br>
 ## Kontributor
 
 - Addin Hadi Rizal
