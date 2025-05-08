@@ -425,15 +425,34 @@ if (count($errors) > 0) {
 ?>
 ```
 
-### Membuat Form
+### `index.php` Untuk Mmebuat Form
 ```
-<form method="POST" action="proses.php">
-  Nama: <input type="text" name="nama"><br>
-  Email: <input type="text" name="email"><br>
-  Password: <input type="password" name="password"><br>
-  Umur: <input type="text" name="umur"><br>
-  <input type="submit" value="Kirim">
-</form>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    <h2>Form Pendaftaran</h2>
+    <form method="POST" action="proses.php">
+        <label for="nama">Nama:</label><br>
+        <input type="text" name="nama" id="nama" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" id="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <label for="umur">Umur:</label><br>
+        <input type="text" name="umur" id="umur" required><br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
+
 ```
 
 
