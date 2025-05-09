@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Tugas 2"
 sidebar_position: 2
-Path: docs/assignment/tugas-2
+Path: docs/Tugas Individu/tugas-2
 ---
 
 # Tugas 2: Membuat Website Sederhana Dari Tugas 1

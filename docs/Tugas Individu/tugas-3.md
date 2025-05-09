@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Tugas 3"
 sidebar_position: 3
-Path: docs/assignment/tugas-3
+Path: docs/Tugas Individu/tugas-3
 ---
 
 # Tugas 3: Membuat Website Sederhana Dengan Javascript + DOM

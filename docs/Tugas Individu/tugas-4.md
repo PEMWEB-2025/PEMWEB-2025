@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Tugas 4"
 sidebar_position: 4
-Path: docs/assignment/tugas-4
+Path: docs/Tugas Individu/tugas-4
 ---
 
 # Tugas 4: Jquery 🙀

@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Tugas 5"
 sidebar_position: 5
-Path: docs/assignment/tugas-5
+Path: docs/assignmTugas Individuent/tugas-5
 ---
 
 # Tugas 5: Ajax

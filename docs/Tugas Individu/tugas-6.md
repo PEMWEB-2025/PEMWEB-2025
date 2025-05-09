@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Tugas 6"
 sidebar_position: 6
-Path: docs/assignment/tugas-6
+Path: docs/Tugas Individu/tugas-6
 ---
 
 # Tugas 6: PHP Native & Database MySQL

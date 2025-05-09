@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Tugas 7"
 sidebar_position: 7
-Path: docs/assignment/tugas-7
+Path: docs/Tugas Individu/tugas-7
 ---
 
 # Tugas 7: OOP & Form Validation
