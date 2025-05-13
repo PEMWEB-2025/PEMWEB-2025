@@ -169,7 +169,7 @@ session_destroy();
 
 ## Demo Praktikum
 
-Download [Bahan Praktikum](https://github.com/PEMWEB-2025/PEMWEB-2025/raw/021ac9dd5da252489ded588f940d6067e7c963c9/static/berkas/Template%20Laporan.docx) berikut lalu extract ke folder yang ingin kalian gunakan
+Download [Bahan Praktikum](https://github.com/PEMWEB-2025/PEMWEB-2025/raw/refs/heads/main/static/berkas/sessionDanCookie.zip) berikut lalu extract ke folder yang ingin kalian gunakan
 
 ## Demo Praktikum Menggunakan Postgresql
 
