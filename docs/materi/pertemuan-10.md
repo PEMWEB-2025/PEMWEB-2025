@@ -151,7 +151,7 @@ Penjelasan:
 
 - Route::get() artinya menerima HTTP GET.
 - '/' adalah URL path.
-- function () { return view('welcome'); } adalah aksi ketika URL diakses. Dalam hal ini mengembalikan view bernama welcome.
+- function () ```{ return view('welcome'); }``` adalah aksi ketika URL diakses. Dalam hal ini mengembalikan view bernama welcome.
 
 
 ## Membuat Controller dan View di Laravel
