@@ -114,3 +114,164 @@ composer --version
 node --version
 ```
 
+## Konsep MVC di Laravel
+
+Laravel menggunakan arsitektur **MVC** yang merupakan singkatan dari:
+
+- **Model**: Berfungsi untuk berinteraksi dengan database. Model bertanggung jawab dalam mengelola data dan logika bisnis aplikasi.
+- **View**: Menampilkan data kepada user. Biasanya berupa file `.blade.php` yang berada di dalam folder `resources/views`.
+- **Controller**: Menjadi penghubung antara Model dan View. Controller menerima request dari user, memprosesnya, dan mengembalikan response (biasanya berupa View).
+
+### Ilustrasi Singkat:
+
+![mvc](https://www.rumahweb.com/journal/wp-content/uploads/2024/09/Laravel-MVC-concept.webp)
+
+## Struktur Folder Utama Laravel (Terkait MVC)
+
+- `app/Models` → Tempat menyimpan file Model
+- `app/Http/Controllers` → Tempat menyimpan file Controller
+- `resources/views` → Tempat menyimpan file View (Blade)
+
+## Routing di Laravel
+
+Routing adalah bagian penting dari Laravel. File route utama Laravel berada di `routes/web.php`
+Di sinilah kita mendefinisikan URL dan menghubungkannya ke fungsi atau controller.
+
+### Contoh Route Sederhana
+
+```php
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+```
+
+Penjelasan:
+
+- Route::get() artinya menerima HTTP GET.
+- '/' adalah URL path.
+- function () { return view('welcome'); } adalah aksi ketika URL diakses. Dalam hal ini mengembalikan view bernama welcome.
+
+
+## Membuat Controller dan View di Laravel
+
+Pada bagian ini kita akan belajar cara membuat Controller dan View di Laravel, serta menghubungkannya menggunakan route.
+
+### 1. Membuat Controller
+
+Laravel menyediakan perintah artisan untuk membuat controller.
+
+```bash
+php artisan make:controller HomeController
+```
+
+Setelah dijalankan, Laravel akan otomatis membuat controller di app/Http/Controllers/HomeController.php
+
+### 2. Menulis Method / Function di Controller
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    public function index()
+    {
+        return view('home');
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
+}
+```
+
+Penjelasan:
+- index() akan menampilkan halaman home.
+- about() akan menampilkan halaman about.
+
+### 3. Membuat View
+
+#### a. Membuat View home.blade.php
+
+```php
+resources/views/home.blade.php
+```
+
+Isi dengan kode berikut: 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Home</title>
+</head>
+<body>
+    <h1>Selamat datang di halaman Home</h1>
+</body>
+</html>
+```
+
+#### b. Membuat View about.blade.php
+
+```php
+resources/views/about.blade.php
+```
+
+Isi dengan kode berikut: 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tentang Kami</title>
+</head>
+<body>
+    <h1>Ini adalah halaman Tentang Kami</h1>
+</body>
+</html>
+```
+
+
+### 4. Menambahkan Route ke Controller
+
+Buka file `routes/web.php` lalu tambahkan kode ini:
+
+```php
+use App\Http\Controllers\HomeController;
+
+Route::get('/home', [HomeController::class, 'index']);
+Route::get('/about', [HomeController::class, 'about']);
+```
+
+Penjelasan:
+- Ketika user membuka /home, akan ditampilkan view home.blade.php
+- Ketika user membuka /about, akan ditampilkan view about.blade.php
+
+### 5. Jalankan kode laravel
+
+Jalankan dengan:
+
+```bash
+php artisan serve
+```
+
+Kemudian buka browser dan kunjungi:
+- http://localhost:8000/home
+- http://localhost:8000/about
+
+## Kontributor
+
+- Addin Hadi Rizal
+- Abraham Willem Hersubagyo
+- Bani Rijal Barru Faza
+- Mohammed Nasser
+
+## Credits
+
+Tutorial ini dikembangkan oleh Asisten Praktikum Pemrograman Website 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Pemrograman Website dapat menyelesaikan tutorial saat sesi lab berlangsung.
