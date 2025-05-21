@@ -1,4 +1,4 @@
----
+<!-- ---
 sidebar_label: "Proyek Akhir"
 sidebar_position: 1
 Path: docs/Tugas Kelompok/proyek-akhir
@@ -90,4 +90,4 @@ Path: docs/Tugas Kelompok/proyek-akhir
         </td>
     </tr>
 </table>
-
+ -->
