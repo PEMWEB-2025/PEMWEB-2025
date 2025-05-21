@@ -1,4 +1,4 @@
-<!-- ---
+---
 sidebar_label: "Proyek Akhir"
 sidebar_position: 1
 Path: docs/Tugas Kelompok/proyek-akhir
@@ -6,15 +6,16 @@ Path: docs/Tugas Kelompok/proyek-akhir
 
 # Proyek Akhir Semester
 
-**Membuat _Website_ menggunakan _Framework_ Laravel (Berkelompok)**
+**Membuat Situs Web menggunakan Framework Laravel (Berkelompok)**
 
 ---
 
 ## Tujuan Pembelajaran Khusus
 
-1. Mengimplementasikan _Website_ sederhana dengan _framework_ Laravel
-2. Menerapkan _widget_ untuk _layout_ dan input, _event handling_, dan pemanggilan asinkronus ke _web service_
-3. Melakukan _deploy_ aplikasi pada platform _cloud_ dan perangkat _mobile_
+1. Merancang Halaman Web
+2. Mengimplementasikan situs web menggunakan *framework* Laravel dengan memenuhi Menerapkan *MVC*, *Migration*, *Auth*, dan *CRUD*
+3. Memanfaatkan *framework* CSS bebas untuk mewujudkan *Responsive Web Design*
+4. Mengimplementasikan *Unit Test* dan *deployment*
 
 ## Aturan Umum Tugas Kelompok
 
@@ -89,4 +90,4 @@ Path: docs/Tugas Kelompok/proyek-akhir
         </td>
     </tr>
 </table>
- -->
+
