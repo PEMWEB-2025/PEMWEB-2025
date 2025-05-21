@@ -114,17 +114,3 @@ composer --version
 node --version
 ```
 
-### [MAMP For MacOS](https://www.mamp.info/en/mac/)
-### [MAMP For Windows](https://www.mamp.info/en/mamp/windows/)
-### [Download Composser](https://getcomposer.org)
-
-### Step" Kalau Pakai MAMP
-- Step 1 Download MAMP
-- Step 2 Download Composser
-- Step 3 Instal [Laravel Installer] via Composser
-```
-composer global require laravel/installer
-```
-- Step 4 
-
-
