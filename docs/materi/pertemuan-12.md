@@ -797,13 +797,3 @@ public function toArray($request)
 - [Laravel Pagination](https://laravel.com/docs/pagination)
 
 ---
-
-## Tugas Praktikum
-
-1. Implementasikan CRUD untuk tabel `categories`
-2. Buat relasi antara `products` dan `categories`
-3. Tambahkan fitur upload gambar untuk produk
-4. Implementasikan soft delete untuk produk
-5. Buat API endpoint untuk CRUD produk
-
----
