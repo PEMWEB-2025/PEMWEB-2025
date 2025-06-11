@@ -1,6 +1,6 @@
 ---
 sidebar_label: "Pertemuan 12: Laravel 3 (CRUD Operations)"
-sidebar_position: 11
+sidebar_position: 12
 Path: docs/materi/pertemuan-12
 ---
 
@@ -15,6 +15,7 @@ Pemrograman Website — diselenggarakan oleh Fakultas Teknologi Informasi dan Sa
 CRUD adalah singkatan dari Create, Read, Update, Delete - operasi dasar yang diperlukan untuk mengelola data dalam aplikasi web. Dalam Laravel, CRUD dapat diimplementasikan dengan mudah menggunakan Eloquent ORM dan resource controllers.
 
 ### Konsep CRUD
+
 - **Create**: Menambah data baru
 - **Read**: Membaca/menampilkan data
 - **Update**: Mengubah data yang sudah ada
@@ -236,15 +237,15 @@ Route::resource('products', ProductController::class)->only([
 
 Resource route akan menghasilkan route berikut:
 
-| Method | URI | Action | Route Name |
-|--------|-----|---------|------------|
-| GET | /products | index | products.index |
-| GET | /products/create | create | products.create |
-| POST | /products | store | products.store |
-| GET | /products/{product} | show | products.show |
-| GET | /products/{product}/edit | edit | products.edit |
-| PUT/PATCH | /products/{product} | update | products.update |
-| DELETE | /products/{product} | destroy | products.destroy |
+| Method    | URI                      | Action  | Route Name       |
+| --------- | ------------------------ | ------- | ---------------- |
+| GET       | `/products`                | index   | `products.index`   |
+| GET       | `/products/create`         | create  | `products.create`  |
+| POST      | `/products`                | store   | `products.store`   |
+| GET       | `/products/{product}`      | show    | `products.show`    |
+| GET       | `/products/{product}/edit` | edit    | `products.edit`    |
+| PUT/PATCH | `/products/{product}`      | update  | `products.update`  |
+| DELETE    | `/products/{product}`      | destroy | `products.destroy` |
 
 ---
 
@@ -252,100 +253,115 @@ Resource route akan menghasilkan route berikut:
 
 ### Layout Template
 
-```
+```html
 <!-- resources/views/layouts/app.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield('title', 'Laravel CRUD')</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="{{ route('products.index') }}">Product Manager</a>
-        </div>
+      <div class="container">
+        <a class="navbar-brand" href="{{ route('products.index') }}"
+          >Product Manager</a
+        >
+      </div>
     </nav>
 
     <div class="container mt-4">
-        @if(session('success'))
-            <div class="alert alert-success">
-                {{ session('success') }}
-            </div>
-        @endif
-
-        @yield('content')
+      @if(session('success'))
+      <div class="alert alert-success">{{ session('success') }}</div>
+      @endif @yield('content')
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
 ```
 
 ### Index View (Read)
 
-```
+```html
 <!-- resources/views/products/index.blade.php -->
-@extends('layouts.app')
-
-@section('title', 'Products List')
-
-@section('content')
+@extends('layouts.app') @section('title', 'Products List') @section('content')
 <div class="d-flex justify-content-between align-items-center mb-3">
-    <h1>Products</h1>
-    <a href="{{ route('products.create') }}" class="btn btn-primary">Add New Product</a>
+  <h1>Products</h1>
+  <a href="{{ route('products.create') }}" class="btn btn-primary"
+    >Add New Product</a
+  >
 </div>
 
 <div class="table-responsive">
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Category</th>
-                <th>Price</th>
-                <th>Stock</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @forelse ($products as $product)
-                <tr>
-                    <td>{{ $product->id }}</td>
-                    <td>{{ $product->name }}</td>
-                    <td>{{ $product->category }}</td>
-                    <td>Rp {{ number_format($product->price, 0, ',', '.') }}</td>
-                    <td>{{ $product->stock }}</td>
-                    <td>
-                        <div class="btn-group" role="group">
-                            <a href="{{ route('products.show', $product) }}" class="btn btn-info btn-sm">View</a>
-                            <a href="{{ route('products.edit', $product) }}" class="btn btn-warning btn-sm">Edit</a>
-                            <form action="{{ route('products.destroy', $product) }}" method="POST" class="d-inline">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
-                            </form>
-                        </div>
-                    </td>
-                </tr>
-            @empty
-                <tr>
-                    <td colspan="6" class="text-center">No products found.</td>
-                </tr>
-            @endforelse
-        </tbody>
-    </table>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @forelse ($products as $product)
+      <tr>
+        <td>{{ $product->id }}</td>
+        <td>{{ $product->name }}</td>
+        <td>{{ $product->category }}</td>
+        <td>Rp {{ number_format($product->price, 0, ',', '.') }}</td>
+        <td>{{ $product->stock }}</td>
+        <td>
+          <div class="btn-group" role="group">
+            <a
+              href="{{ route('products.show', $product) }}"
+              class="btn btn-info btn-sm"
+              >View</a
+            >
+            <a
+              href="{{ route('products.edit', $product) }}"
+              class="btn btn-warning btn-sm"
+              >Edit</a
+            >
+            <form
+              action="{{ route('products.destroy', $product) }}"
+              method="POST"
+              class="d-inline"
+            >
+              @csrf @method('DELETE')
+              <button
+                type="submit"
+                class="btn btn-danger btn-sm"
+                onclick="return confirm('Are you sure?')"
+              >
+                Delete
+              </button>
+            </form>
+          </div>
+        </td>
+      </tr>
+      @empty
+      <tr>
+        <td colspan="6" class="text-center">No products found.</td>
+      </tr>
+      @endforelse
+    </tbody>
+  </table>
 </div>
 
-{{ $products->links() }}
-@endsection
+{{ $products->links() }} @endsection
 ```
 
 ### Create View
 
-```
+```html
 <!-- resources/views/products/create.blade.php -->
 @extends('layouts.app')
 
@@ -355,13 +371,13 @@ Resource route akan menghasilkan route berikut:
 <div class="row">
     <div class="col-md-8">
         <h1>Add New Product</h1>
-        
+
         <form action="{{ route('products.store') }}" method="POST">
             @csrf
-            
+
             <div class="mb-3">
                 <label for="name" class="form-label">Product Name</label>
-                <input type="text" class="form-control @error('name') is-invalid @enderror" 
+                <input type="text" class="form-control @error('name') is-invalid @enderror"
                        id="name" name="name" value="{{ old('name') }}" required>
                 @error('name')
                     <div class="invalid-feedback">{{ $message }}</div>
@@ -370,7 +386,7 @@ Resource route akan menghasilkan route berikut:
 
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <textarea class="form-control @error('description') is-invalid @enderror" 
+                <textarea class="form-control @error('description') is-invalid @enderror"
                           id="description" name="description" rows="4" required>{{ old('description') }}</textarea>
                 @error('description')
                     <div class="invalid-feedback">{{ $message }}</div>
@@ -381,7 +397,7 @@ Resource route akan menghasilkan route berikut:
                 <div class="col-md-4">
                     <div class="mb-3">
                         <label for="price" class="form-label">Price</label>
-                        <input type="number" class="form-control @error('price') is-invalid @enderror" 
+                        <input type="number" class="form-control @error('price') is-invalid @enderror"
                                id="price" name="price" step="0.01" value="{{ old('price') }}" required>
                         @error('price')
                             <div class="invalid-feedback">{{ $message }}</div>
@@ -391,7 +407,7 @@ Resource route akan menghasilkan route berikut:
                 <div class="col-md-4">
                     <div class="mb-3">
                         <label for="stock" class="form-label">Stock</label>
-                        <input type="number" class="form-control @error('stock') is-invalid @enderror" 
+                        <input type="number" class="form-control @error('stock') is-invalid @enderror"
                                id="stock" name="stock" value="{{ old('stock') }}" required>
                         @error('stock')
                             <div class="invalid-feedback">{{ $message }}</div>
@@ -401,7 +417,7 @@ Resource route akan menghasilkan route berikut:
                 <div class="col-md-4">
                     <div class="mb-3">
                         <label for="category" class="form-label">Category</label>
-                        <select class="form-control @error('category') is-invalid @enderror" 
+                        <select class="form-control @error('category') is-invalid @enderror"
                                 id="category" name="category" required>
                             <option value="">Select Category</option>
                             <option value="Electronics" {{ old('category') == 'Electronics' ? 'selected' : '' }}>Electronics</option>
@@ -428,68 +444,74 @@ Resource route akan menghasilkan route berikut:
 
 ### Show View
 
-```
+```html
 <!-- resources/views/products/show.blade.php -->
-@extends('layouts.app')
-
-@section('title', 'Product Details')
-
-@section('content')
+@extends('layouts.app') @section('title', 'Product Details') @section('content')
 <div class="row">
-    <div class="col-md-8">
-        <div class="card">
-            <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="mb-0">Product Details</h5>
-                <div>
-                    <a href="{{ route('products.edit', $product) }}" class="btn btn-warning btn-sm">Edit</a>
-                    <a href="{{ route('products.index') }}" class="btn btn-secondary btn-sm">Back to List</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <table class="table table-borderless">
-                    <tr>
-                        <th width="150">ID:</th>
-                        <td>{{ $product->id }}</td>
-                    </tr>
-                    <tr>
-                        <th>Name:</th>
-                        <td>{{ $product->name }}</td>
-                    </tr>
-                    <tr>
-                        <th>Description:</th>
-                        <td>{{ $product->description }}</td>
-                    </tr>
-                    <tr>
-                        <th>Price:</th>
-                        <td>Rp {{ number_format($product->price, 0, ',', '.') }}</td>
-                    </tr>
-                    <tr>
-                        <th>Stock:</th>
-                        <td>{{ $product->stock }}</td>
-                    </tr>
-                    <tr>
-                        <th>Category:</th>
-                        <td>{{ $product->category }}</td>
-                    </tr>
-                    <tr>
-                        <th>Created:</th>
-                        <td>{{ $product->created_at->format('d M Y H:i') }}</td>
-                    </tr>
-                    <tr>
-                        <th>Updated:</th>
-                        <td>{{ $product->updated_at->format('d M Y H:i') }}</td>
-                    </tr>
-                </table>
-            </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div
+        class="card-header d-flex justify-content-between align-items-center"
+      >
+        <h5 class="mb-0">Product Details</h5>
+        <div>
+          <a
+            href="{{ route('products.edit', $product) }}"
+            class="btn btn-warning btn-sm"
+            >Edit</a
+          >
+          <a
+            href="{{ route('products.index') }}"
+            class="btn btn-secondary btn-sm"
+            >Back to List</a
+          >
         </div>
+      </div>
+      <div class="card-body">
+        <table class="table table-borderless">
+          <tr>
+            <th width="150">ID:</th>
+            <td>{{ $product->id }}</td>
+          </tr>
+          <tr>
+            <th>Name:</th>
+            <td>{{ $product->name }}</td>
+          </tr>
+          <tr>
+            <th>Description:</th>
+            <td>{{ $product->description }}</td>
+          </tr>
+          <tr>
+            <th>Price:</th>
+            <td>Rp {{ number_format($product->price, 0, ',', '.') }}</td>
+          </tr>
+          <tr>
+            <th>Stock:</th>
+            <td>{{ $product->stock }}</td>
+          </tr>
+          <tr>
+            <th>Category:</th>
+            <td>{{ $product->category }}</td>
+          </tr>
+          <tr>
+            <th>Created:</th>
+            <td>{{ $product->created_at->format('d M Y H:i') }}</td>
+          </tr>
+          <tr>
+            <th>Updated:</th>
+            <td>{{ $product->updated_at->format('d M Y H:i') }}</td>
+          </tr>
+        </table>
+      </div>
     </div>
+  </div>
 </div>
 @endsection
 ```
 
 ### Edit View
 
-```
+```html
 <!-- resources/views/products/edit.blade.php -->
 @extends('layouts.app')
 
@@ -499,14 +521,14 @@ Resource route akan menghasilkan route berikut:
 <div class="row">
     <div class="col-md-8">
         <h1>Edit Product</h1>
-        
+
         <form action="{{ route('products.update', $product) }}" method="POST">
             @csrf
             @method('PUT')
-            
+
             <div class="mb-3">
                 <label for="name" class="form-label">Product Name</label>
-                <input type="text" class="form-control @error('name') is-invalid @enderror" 
+                <input type="text" class="form-control @error('name') is-invalid @enderror"
                        id="name" name="name" value="{{ old('name', $product->name) }}" required>
                 @error('name')
                     <div class="invalid-feedback">{{ $message }}</div>
@@ -515,7 +537,7 @@ Resource route akan menghasilkan route berikut:
 
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <textarea class="form-control @error('description') is-invalid @enderror" 
+                <textarea class="form-control @error('description') is-invalid @enderror"
                           id="description" name="description" rows="4" required>{{ old('description', $product->description) }}</textarea>
                 @error('description')
                     <div class="invalid-feedback">{{ $message }}</div>
@@ -526,7 +548,7 @@ Resource route akan menghasilkan route berikut:
                 <div class="col-md-4">
                     <div class="mb-3">
                         <label for="price" class="form-label">Price</label>
-                        <input type="number" class="form-control @error('price') is-invalid @enderror" 
+                        <input type="number" class="form-control @error('price') is-invalid @enderror"
                                id="price" name="price" step="0.01" value="{{ old('price', $product->price) }}" required>
                         @error('price')
                             <div class="invalid-feedback">{{ $message }}</div>
@@ -536,7 +558,7 @@ Resource route akan menghasilkan route berikut:
                 <div class="col-md-4">
                     <div class="mb-3">
                         <label for="stock" class="form-label">Stock</label>
-                        <input type="number" class="form-control @error('stock') is-invalid @enderror" 
+                        <input type="number" class="form-control @error('stock') is-invalid @enderror"
                                id="stock" name="stock" value="{{ old('stock', $product->stock) }}" required>
                         @error('stock')
                             <div class="invalid-feedback">{{ $message }}</div>
@@ -546,7 +568,7 @@ Resource route akan menghasilkan route berikut:
                 <div class="col-md-4">
                     <div class="mb-3">
                         <label for="category" class="form-label">Category</label>
-                        <select class="form-control @error('category') is-invalid @enderror" 
+                        <select class="form-control @error('category') is-invalid @enderror"
                                 id="category" name="category" required>
                             <option value="">Select Category</option>
                             <option value="Electronics" {{ old('category', $product->category) == 'Electronics' ? 'selected' : '' }}>Electronics</option>

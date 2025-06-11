@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Pertemuan 11: Laravel 2 (Migration Seeder Factory) & Authentication"
-sidebar_position: 10
-Path: docs/materi/pertemuan-10
+sidebar_position: 11
+Path: docs/materi/pertemuan-11
 ---
 
 # Pertemuan 11: Laravel 2 (Migration Seeder Factory) & Authentication
