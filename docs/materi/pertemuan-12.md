@@ -653,64 +653,7 @@ public function update(ProductRequest $request, Product $product)
 
 ---
 
-## 7. Search dan Filter
-
-### Menambahkan Fitur Search
-
-```php
-// Di ProductController.php
-public function index(Request $request)
-{
-    $query = Product::query();
-
-    if ($request->has('search')) {
-        $query->where('name', 'like', '%' . $request->search . '%')
-              ->orWhere('description', 'like', '%' . $request->search . '%');
-    }
-
-    if ($request->has('category') && $request->category != '') {
-        $query->where('category', $request->category);
-    }
-
-    $products = $query->paginate(10)->withQueryString();
-    $categories = Product::distinct()->pluck('category');
-
-    return view('products.index', compact('products', 'categories'));
-}
-```
-
-### Form Search di View
-
-```
-<!-- Tambahkan di resources/views/products/index.blade.php sebelum tabel -->
-<div class="row mb-3">
-    <div class="col-md-6">
-        <form method="GET" action="{{ route('products.index') }}">
-            <div class="input-group">
-                <input type="text" name="search" class="form-control" 
-                       placeholder="Search products..." value="{{ request('search') }}">
-                <button class="btn btn-outline-secondary" type="submit">Search</button>
-            </div>
-        </form>
-    </div>
-    <div class="col-md-3">
-        <form method="GET" action="{{ route('products.index') }}">
-            <select name="category" class="form-control" onchange="this.form.submit()">
-                <option value="">All Categories</option>
-                @foreach($categories as $category)
-                    <option value="{{ $category }}" {{ request('category') == $category ? 'selected' : '' }}>
-                        {{ $category }}
-                    </option>
-                @endforeach
-            </select>
-        </form>
-    </div>
-</div>
-```
-
----
-
-## 8. Seeder untuk Testing
+## 7. Seeder untuk Testing
 
 ```php
 // database/seeders/ProductSeeder.php
@@ -758,7 +701,7 @@ class ProductSeeder extends Seeder
 
 ---
 
-## 9. Testing CRUD
+## 8. Testing CRUD
 
 ### Menjalankan Aplikasi
 
@@ -781,7 +724,7 @@ php artisan serve
 
 ---
 
-## 10. Best Practices
+## 9. Best Practices
 
 ### Model Relationships
 
