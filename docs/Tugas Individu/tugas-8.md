@@ -8,7 +8,7 @@ Path: docs/Tugas Individu/tugas-8
 
 # Deskripsi Tugas 
 
-Membuat sebuah website dengan PHP native dengan tema bebas 👍🏻
+Membuat sebuah website dengan Laravel dengan tema bebas 👍🏻
 
 ketentuan :
 1. Menggunakan framework PHP _(Laravel)_.
